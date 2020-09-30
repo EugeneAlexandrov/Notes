@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="@dimen/app_vertical_margin"
+    android:layout_margin="@dimen/app_margin"
+    android:backgroundTint="#F49B00"
     app:cardCornerRadius="@dimen/card_corner_radius"
     app:cardElevation="@dimen/card_elevation">
 
@@ -19,7 +20,7 @@
             android:layout_margin="@dimen/app_margin"
             android:gravity="center"
             android:lines="1"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/item_note_title"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/app_margin"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/primary_text_light"
             android:textSize="@dimen/app_main_text_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

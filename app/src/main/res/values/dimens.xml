@@ -4,8 +4,7 @@
     <dimen name="card_elevation">10dp</dimen>
     <dimen name="item_note_title">20sp</dimen>
 
-
-    <dimen name="app_margin">16dp</dimen>
+    <dimen name="app_margin">8dp</dimen>
+    <dimen name="app_padding">8dp</dimen>
     <dimen name="app_main_text_size">16sp</dimen>
-    <dimen name="app_vertical_margin">8dp</dimen>
 </resources>
