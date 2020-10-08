@@ -27,6 +27,17 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MainHolder>() {
         holder.noteText.text = mListNotes[position].text
     }
 
+    override fun onViewAttachedToWindow(holder: MainHolder) {
+        holder.itemView.setOnClickListener {
+            MainFragment.click(mListNotes[holder.adapterPosition])
+        }
+    }
+
+    override fun onViewDetachedFromWindow(holder: MainHolder) {
+        holder.itemView.setOnClickListener(null)
+        super.onViewDetachedFromWindow(holder)
+    }
+
     override fun getItemCount(): Int {
         return mListNotes.size
     }

@@ -69,4 +69,12 @@ class MainFragment : Fragment() {
         viewModel.allNotes.removeObserver(mListObserver)
         mRecyclerView.adapter = null
     }
+
+    companion object {
+        fun click(note: AppNote) {
+            val bundle = Bundle()
+            bundle.putSerializable("note", note)
+            APP_ACTIVITY.navController.navigate(R.id.action_mainFragment_to_noteFragment, bundle)
+        }
+    }
 }
